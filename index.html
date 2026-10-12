@@ -5,43 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sopa de letras bíblica — Job 1:1–22</title>
 <style>
-*{box-sizing:border-box} body{margin:0;padding:18px 10px 30px;font-family:Arial,sans-serif;background:#f1f5f9;color:#243244;text-align:center}
-h1{color:#285d49;font-size:clamp(1.4rem,5vw,2rem)} p{max-width:700px;margin:12px auto;line-height:1.5}
-.panel{max-width:700px;margin:12px auto;padding:12px;background:#fff;border:1px solid #dbe3ec;border-radius:14px}
-#estadisticas{display:flex;justify-content:center;flex-wrap:wrap;gap:10px} .dato{min-width:125px;padding:9px;background:#f8fafc;border-radius:10px}
-.dato strong{display:block;font-size:1.2rem;color:#285d49;margin-top:4px}
-#progreso{height:12px;background:#dbe3ec;border-radius:99px;overflow:hidden;margin:12px auto 4px;max-width:600px}#barra{height:100%;width:0;background:#3f876a;transition:width .2s}
-#tablero{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;width:min(100%,600px);margin:0 auto 22px;touch-action:none;user-select:none;-webkit-user-select:none}
-.letra{aspect-ratio:1;display:flex;align-items:center;justify-content:center;min-width:0;padding:0;background:white;border:1px solid #cbd5e1;border-radius:4px;font-weight:bold;font-size:clamp(.68rem,3.2vw,1.1rem);cursor:pointer;touch-action:none}
-.letra.seleccion{outline:3px solid #526579;outline-offset:-3px}.letra.encontrada{font-weight:bold;color:#253244}
-h2{font-size:1.25rem} #lista{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:700px;margin:0 auto 18px}
-.palabra{padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;background:white}.palabra.completa{text-decoration:line-through;font-weight:bold}
-#mensaje{min-height:28px;font-weight:bold;margin:16px 0}button{border:0;border-radius:10px;padding:13px 18px;margin:5px;background:#285d49;color:white;font-size:1rem;cursor:pointer}button.secundario{background:#526579}
-#final{display:none}#qr{width:210px;height:210px;max-width:100%;object-fit:contain;background:#fff;padding:8px;border:1px solid #dbe3ec;border-radius:10px}#qrAviso{font-size:.9rem;color:#526579}
-@media(max-width:360px){#tablero{gap:2px}.letra{border-radius:2px}}
-#rankingTabla{width:100%;border-collapse:collapse;margin-top:10px}#rankingTabla th,#rankingTabla td{padding:8px;border-bottom:1px solid #dbe3ec;text-align:left}#rankingTabla th{background:#f8fafc;color:#285d49}#nombreParticipante{width:min(100%,360px);padding:12px;border:1px solid #cbd5e1;border-radius:10px;font-size:1rem}#estadoFirebase{font-size:.9rem;color:#526579}
+*{box-sizing:border-box}body{margin:0;padding:18px 10px 30px;font-family:Arial,sans-serif;background:#f1f5f9;color:#243244;text-align:center}h1{color:#285d49;font-size:clamp(1.4rem,5vw,2rem)}p{max-width:700px;margin:12px auto;line-height:1.5}.panel{max-width:700px;margin:12px auto;padding:12px;background:#fff;border:1px solid #dbe3ec;border-radius:14px}#estadisticas{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.dato{min-width:125px;padding:9px;background:#f8fafc;border-radius:10px}.dato strong{display:block;font-size:1.2rem;color:#285d49;margin-top:4px}#progreso{height:12px;background:#dbe3ec;border-radius:99px;overflow:hidden;margin:12px auto 4px;max-width:600px}#barra{height:100%;width:0;background:#3f876a;transition:width .2s}#tablero{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px;width:min(100%,600px);margin:0 auto 22px;touch-action:none;user-select:none;-webkit-user-select:none}.letra{aspect-ratio:1;display:flex;align-items:center;justify-content:center;min-width:0;padding:0;background:white;border:1px solid #cbd5e1;border-radius:4px;font-weight:bold;font-size:clamp(.68rem,3.2vw,1.1rem);cursor:pointer;touch-action:none}.letra.seleccion{outline:3px solid #526579;outline-offset:-3px}.letra.encontrada{font-weight:bold}h2{font-size:1.25rem}#lista{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:700px;margin:0 auto 18px}.palabra{padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;background:white}.palabra.completa{text-decoration:line-through;font-weight:bold}#mensaje{min-height:28px;font-weight:bold;margin:16px 0}button{border:0;border-radius:10px;padding:13px 18px;margin:5px;background:#285d49;color:white;font-size:1rem;cursor:pointer}button.secundario{background:#526579}button:disabled{opacity:.55;cursor:not-allowed}#final{display:none}#qr{width:210px;height:210px;max-width:100%;object-fit:contain;background:#fff;padding:8px;border:1px solid #dbe3ec;border-radius:10px}#qrAviso{font-size:.9rem;color:#526579}@media(max-width:360px){#tablero{gap:2px}.letra{border-radius:2px}}#rankingTabla{width:100%;border-collapse:collapse;margin-top:10px}#rankingTabla th,#rankingTabla td{padding:8px;border-bottom:1px solid #dbe3ec;text-align:left}#rankingTabla th{background:#f8fafc;color:#285d49}#nombreParticipante{width:min(100%,360px);padding:12px;border:1px solid #cbd5e1;border-radius:10px;font-size:1rem}#estadoFirebase{font-size:.9rem;color:#526579}.nota{font-size:.88rem;color:#526579}
 </style>
 </head>
 <body>
 <h1>📖 Sopa de letras: Job 1:1–22</h1>
-<p>Encuentra las 10 palabras. En el celular, mantén el dedo sobre la primera letra y deslízalo hasta la última sin levantarlo. En computadora, mantén presionado el botón del ratón y arrastra. Puedes seleccionar palabras en horizontal, vertical, diagonal y al revés.</p>
-<div class="panel" id="registroParticipante"><h2>👤 Identifícate para jugar</h2><p>Escribe tu nombre para que tu resultado aparezca en el ranking común.</p><input id="nombreParticipante" maxlength="30" autocomplete="name" placeholder="Tu nombre" /><br><button id="guardarNombre" type="button">Guardar nombre y jugar</button><p id="estadoParticipante" aria-live="polite"></p></div>
-<div class="panel">
-  <div id="estadisticas">
-    <div class="dato">Palabras encontradas<strong id="avance">0 de 10</strong></div>
-    <div class="dato">Tiempo<strong id="tiempo">00:00</strong></div>
-    <div class="dato">Puntuación<strong id="puntos">0</strong></div>
-  </div>
-  <div id="progreso" role="progressbar" aria-label="Progreso del juego" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><div id="barra"></div></div>
-</div>
-<div id="tablero" aria-label="Tablero de sopa de letras"></div>
-<h2>Palabras que debes buscar</h2><div id="lista"></div>
-<div id="mensaje">¡Desliza por las letras para comenzar!</div>
-<div id="final" class="panel"><h2>🎉 ¡Felicitaciones!</h2><p>Encontraste las 10 palabras de la sopa de letras.</p><p id="resumenFinal"></p><button id="jugarOtraVez">Jugar otra vez</button></div>
-<button id="reiniciar">Volver a jugar</button>
-<div class="panel" id="rankingPanel"><h2>🏆 Ranking de participantes</h2><p>Resultados compartidos de todos los celulares.</p><p id="estadoFirebase">Conectando con el ranking...</p><div style="overflow-x:auto"><table id="rankingTabla"><thead><tr><th>Lugar</th><th>Participante</th><th>Puntos</th><th>Tiempo</th></tr></thead><tbody id="rankingCuerpo"><tr><td colspan="4">Todavía no hay resultados.</td></tr></tbody></table></div></div>
+<p>Encuentra las 10 palabras. En el celular, mantén el dedo sobre la primera letra y deslízalo hasta la última sin levantarlo. En computadora, mantén presionado el ratón y arrastra. Puedes seleccionar palabras en horizontal, vertical, diagonal y al revés.</p>
+<div class="panel" id="registroParticipante"><h2>👤 Identifícate para jugar</h2><p>Escribe tu nombre para que tu resultado aparezca en el ranking común.</p><input id="nombreParticipante" maxlength="30" autocomplete="name" placeholder="Tu nombre" /><br><button id="guardarNombre" type="button">Guardar nombre y jugar</button><p id="estadoParticipante" aria-live="polite"></p><p class="nota">Si ya existe un resultado con este nombre, el juego actualizará ese registro si consigues una puntuación mejor.</p></div>
+<div class="panel"><div id="estadisticas"><div class="dato">Palabras encontradas<strong id="avance">0 de 10</strong></div><div class="dato">Tiempo<strong id="tiempo">00:00</strong></div><div class="dato">Puntuación<strong id="puntos">0</strong></div></div><div id="progreso" role="progressbar" aria-label="Progreso del juego" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><div id="barra"></div></div></div>
+<div id="tablero" aria-label="Tablero de sopa de letras"></div><h2>Palabras que debes buscar</h2><div id="lista"></div><div id="mensaje">¡Desliza por las letras para comenzar!</div>
+<div id="final" class="panel"><h2>🎉 ¡Felicitaciones!</h2><p>Encontraste las 10 palabras de la sopa de letras.</p><p id="resumenFinal"></p><button id="jugarOtraVez">Jugar otra vez</button></div><button id="reiniciar">Volver a jugar</button>
+<div class="panel" id="rankingPanel"><h2>🏆 Ranking de participantes</h2><p>Resultados compartidos de todos los celulares. Se muestra la mejor puntuación de cada nombre.</p><p id="estadoFirebase">Conectando con el ranking...</p><div style="overflow-x:auto"><table id="rankingTabla"><thead><tr><th>Lugar</th><th>Participante</th><th>Puntos</th><th>Tiempo</th></tr></thead><tbody id="rankingCuerpo"><tr><td colspan="4">Todavía no hay resultados.</td></tr></tbody></table></div></div>
 <div class="panel" id="compartir"><h2>📲 Comparte el juego</h2><p>Escanea este código QR con la cámara del celular para abrir la sopa de letras publicada.</p><img id="qr" alt="Código QR para abrir la sopa de letras" /><p id="qrAviso">El código QR se crea usando la dirección de esta página. Para que otros puedan entrar, el juego debe estar publicado.</p><button id="compartirBoton" class="secundario" type="button">Copiar enlace del juego</button><p id="copiado" aria-live="polite"></p></div>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 <script>
 (() => {
@@ -55,83 +32,54 @@ h2{font-size:1.25rem} #lista{display:flex;flex-wrap:wrap;justify-content:center;
     appId: "1:379404224053:web:e9c9439d62f3898197937c"
   };
   const $=id=>document.getElementById(id);
-  let db=null, participante="", resultadoGuardado=false;
+  let db=null, authReady=false, participante="", resultadoGuardado=false, uid=null, rankingCache={};
   const rankingRefPath="rankingSopaJob";
   try {
-    if (typeof firebase !== "undefined") {
-      firebase.initializeApp(firebaseConfig); db=firebase.database();
-      db.ref(rankingRefPath).on("value", snapshot => dibujarRanking(snapshot.val()), error => { $("estadoFirebase").textContent="No se pudo cargar el ranking: "+error.message; });
-    } else { $("estadoFirebase").textContent="No se pudo cargar Firebase. Revisa tu conexión."; }
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth().signInAnonymously().then(cred=>{
+      uid=cred.user.uid; authReady=true; db=firebase.database();
+      db.ref(rankingRefPath).on("value",snapshot=>{rankingCache=snapshot.val()||{};dibujarRanking(rankingCache);},error=>{$("estadoFirebase").textContent="No se pudo cargar el ranking: "+error.message;});
+      $("estadoFirebase").textContent="Sesión anónima activa. Conectando con el ranking…";
+    }).catch(error=>{$("estadoFirebase").textContent="No se pudo iniciar la sesión anónima: "+error.message+". Revisa que el acceso Anónimo esté habilitado.";});
   } catch(e) { $("estadoFirebase").textContent="No se pudo conectar con Firebase. Revisa la configuración."; }
   const palabras=["JOB","INTEGRO","TEMEROSO","RECTO","DIOS","HIJOS","OVEJAS","CAMELLOS","FUEGO","SATANAS"];
   const colores=["#F6BD60","#84DCC6","#F28482","#A0C4FF","#CDB4DB","#B9FBC0","#FFD6A5","#9BF6FF","#FDFFB6","#FFC6FF"];
-  const N=12,tablero=document.getElementById("tablero"),lista=document.getElementById("lista");
+  const N=12,tablero=$("tablero"),lista=$("lista");
   let letras=[],rutas={},encontradas=new Set(),arrastrando=false,inicio=null,seleccion=[],inicioTiempo=null,intervalo=null,puntuacion=0,terminado=false;
   function formatearTiempo(segundos){const m=Math.floor(segundos/60),s=segundos%60;return String(m).padStart(2,"0")+":"+String(s).padStart(2,"0")}
   function tiempoActual(){return inicioTiempo===null?0:Math.floor((Date.now()-inicioTiempo)/1000)}
   function iniciarReloj(){if(inicioTiempo!==null||terminado)return;inicioTiempo=Date.now();intervalo=setInterval(()=>$("tiempo").textContent=formatearTiempo(tiempoActual()),1000)}
   function detenerReloj(){if(intervalo!==null){clearInterval(intervalo);intervalo=null}}
-  function generar(){
-    detenerReloj();inicioTiempo=null;puntuacion=0;terminado=false;resultadoGuardado=false;$("tiempo").textContent="00:00";$("puntos").textContent="0";$("final").style.display="none";$("reiniciar").style.display="inline-block";
-    letras=Array.from({length:N},()=>Array(N).fill(""));rutas={};encontradas=new Set();arrastrando=false;inicio=null;seleccion=[];
-    const dirs=[[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]];
-    for(const p of [...palabras].sort((a,b)=>b.length-a.length)){
-      let ok=false;
-      for(let intento=0;intento<3000&&!ok;intento++){
-        const [dr,dc]=dirs[Math.floor(Math.random()*dirs.length)],r=Math.floor(Math.random()*N),c=Math.floor(Math.random()*N),er=r+dr*(p.length-1),ec=c+dc*(p.length-1);
-        if(er<0||er>=N||ec<0||ec>=N)continue;let sirve=true;
-        for(let i=0;i<p.length;i++){const v=letras[r+dr*i][c+dc*i];if(v&&v!==p[i]){sirve=false;break}}
-        if(!sirve)continue;rutas[p]=[];for(let i=0;i<p.length;i++){const rr=r+dr*i,cc=c+dc*i;letras[rr][cc]=p[i];rutas[p].push(`${rr},${cc}`)}ok=true;
-      }
-      if(!ok){generar();return}
-    }
-    const abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ";for(let r=0;r<N;r++)for(let c=0;c<N;c++)if(!letras[r][c])letras[r][c]=abc[Math.floor(Math.random()*abc.length)];
-    dibujar();actualizarAvance();$("mensaje").textContent="¡Desliza por las letras para comenzar!";
-  }
-  function dibujar(){
-    tablero.innerHTML="";lista.innerHTML="";
-    for(let r=0;r<N;r++)for(let c=0;c<N;c++){const el=document.createElement("div");el.className="letra";el.textContent=letras[r][c];el.dataset.r=r;el.dataset.c=c;el.id=`celda-${r}-${c}`;tablero.appendChild(el)}
-    palabras.forEach(p=>{const el=document.createElement("span");el.className="palabra";el.id=`palabra-${p}`;el.textContent=p;lista.appendChild(el)});
-  }
+  function generar(){detenerReloj();inicioTiempo=null;puntuacion=0;terminado=false;resultadoGuardado=false;$("tiempo").textContent="00:00";$("puntos").textContent="0";$("final").style.display="none";$("reiniciar").style.display="inline-block";letras=Array.from({length:N},()=>Array(N).fill(""));rutas={};encontradas=new Set();arrastrando=false;inicio=null;seleccion=[];const dirs=[[0,1],[1,0],[1,1],[0,-1],[-1,0],[-1,-1],[1,-1],[-1,1]];
+    for(const p of [...palabras].sort((a,b)=>b.length-a.length)){let ok=false;for(let intento=0;intento<3000&&!ok;intento++){const [dr,dc]=dirs[Math.floor(Math.random()*dirs.length)],r=Math.floor(Math.random()*N),c=Math.floor(Math.random()*N),er=r+dr*(p.length-1),ec=c+dc*(p.length-1);if(er<0||er>=N||ec<0||ec>=N)continue;let sirve=true;for(let i=0;i<p.length;i++){const v=letras[r+dr*i][c+dc*i];if(v&&v!==p[i]){sirve=false;break}}if(!sirve)continue;rutas[p]=[];for(let i=0;i<p.length;i++){const rr=r+dr*i,cc=c+dc*i;letras[rr][cc]=p[i];rutas[p].push(`${rr},${cc}`)}ok=true;}if(!ok){generar();return}}
+    const abc="ABCDEFGHIJKLMNOPQRSTUVWXYZ";for(let r=0;r<N;r++)for(let c=0;c<N;c++)if(!letras[r][c])letras[r][c]=abc[Math.floor(Math.random()*abc.length)];dibujar();actualizarAvance();$("mensaje").textContent="¡Desliza por las letras para comenzar!";}
+  function dibujar(){tablero.innerHTML="";lista.innerHTML="";for(let r=0;r<N;r++)for(let c=0;c<N;c++){const el=document.createElement("div");el.className="letra";el.textContent=letras[r][c];el.dataset.r=r;el.dataset.c=c;el.id=`celda-${r}-${c}`;tablero.appendChild(el)}palabras.forEach(p=>{const el=document.createElement("span");el.className="palabra";el.id=`palabra-${p}`;el.textContent=p;lista.appendChild(el)});}
   function actualizarAvance(){const n=encontradas.size;$("avance").textContent=`${n} de ${palabras.length}`;$("barra").style.width=(n/palabras.length*100)+"%";$("progreso").setAttribute("aria-valuenow",n);$("puntos").textContent=puntuacion}
   function celdaEn(x,y){const el=document.elementFromPoint(x,y);return el&&el.classList.contains("letra")&&tablero.contains(el)?el:null}
   function rutaLinea(a,b){const dr=b.r-a.r,dc=b.c-a.c;if(dr!==0&&dc!==0&&Math.abs(dr)!==Math.abs(dc))return [];const n=Math.max(Math.abs(dr),Math.abs(dc)),sr=Math.sign(dr),sc=Math.sign(dc),out=[];for(let i=0;i<=n;i++)out.push({r:a.r+sr*i,c:a.c+sc*i});return out}
-  function limpiar(){tablero.querySelectorAll(".seleccion").forEach(el=>el.classList.remove("seleccion"))}
-  function pintar(ruta){limpiar();ruta.forEach(p=>{const el=$("celda-"+p.r+"-"+p.c);if(el)el.classList.add("seleccion")})}
+  function limpiar(){tablero.querySelectorAll(".seleccion").forEach(el=>el.classList.remove("seleccion"))}function pintar(ruta){limpiar();ruta.forEach(p=>{const el=$("celda-"+p.r+"-"+p.c);if(el)el.classList.add("seleccion")})}
   tablero.addEventListener("pointerdown",e=>{const el=celdaEn(e.clientX,e.clientY);if(!el||terminado||!participante){if(!participante)$("estadoParticipante").textContent="Primero escribe tu nombre y pulsa Guardar nombre y jugar.";return;}e.preventDefault();iniciarReloj();arrastrando=true;inicio={r:+el.dataset.r,c:+el.dataset.c};seleccion=[inicio];pintar(seleccion);try{tablero.setPointerCapture(e.pointerId)}catch(_){}});
   tablero.addEventListener("pointermove",e=>{if(!arrastrando)return;e.preventDefault();const el=celdaEn(e.clientX,e.clientY);if(!el)return;const fin={r:+el.dataset.r,c:+el.dataset.c},nueva=rutaLinea(inicio,fin);if(nueva.length){seleccion=nueva;pintar(seleccion)}});
-  function terminar(){if(!arrastrando)return;arrastrando=false;const texto=seleccion.map(p=>letras[p.r][p.c]).join(""),rev=texto.split("").reverse().join(""),palabra=palabras.find(p=>!encontradas.has(p)&&(p===texto||p===rev));
-    if(palabra){encontradas.add(palabra);const color=colores[palabras.indexOf(palabra)];rutas[palabra].forEach(pos=>{const [r,c]=pos.split(",").map(Number),el=$("celda-"+r+"-"+c);el.style.backgroundColor=color;el.classList.add("encontrada")});const etiqueta=$("palabra-"+palabra);etiqueta.style.backgroundColor=color;etiqueta.classList.add("completa");puntuacion+=100;$("mensaje").textContent=`¡Correcto! Encontraste ${palabra}: +100 puntos.`;actualizarAvance();
-      if(encontradas.size===palabras.length){terminado=true;detenerReloj();guardarResultado();$("mensaje").textContent="🎉 ¡Excelente! Encontraste las 10 palabras.";$("resumenFinal").textContent=`Puntuación final: ${puntuacion} puntos · Tiempo: ${formatearTiempo(tiempoActual())}.`;$("final").style.display="block";$("reiniciar").style.display="none";$("final").scrollIntoView({behavior:"smooth",block:"center"})}
-    }else if(seleccion.length>1){$("mensaje").textContent="No coincide con una palabra pendiente. ¡Intenta otra vez!"}
-    limpiar();inicio=null;seleccion=[];
-  }
+  function terminar(){if(!arrastrando)return;arrastrando=false;const texto=seleccion.map(p=>letras[p.r][p.c]).join(""),rev=texto.split("").reverse().join(""),palabra=palabras.find(p=>!encontradas.has(p)&&(p===texto||p===rev));if(palabra){encontradas.add(palabra);const color=colores[palabras.indexOf(palabra)];rutas[palabra].forEach(pos=>{const [r,c]=pos.split(",").map(Number),el=$("celda-"+r+"-"+c);el.style.backgroundColor=color;el.classList.add("encontrada")});const etiqueta=$("palabra-"+palabra);etiqueta.style.backgroundColor=color;etiqueta.classList.add("completa");puntuacion+=100;$("mensaje").textContent=`¡Correcto! Encontraste ${palabra}: +100 puntos.`;actualizarAvance();if(encontradas.size===palabras.length){terminado=true;detenerReloj();guardarResultado();$("mensaje").textContent="🎉 ¡Excelente! Encontraste las 10 palabras.";$("resumenFinal").textContent=`Puntuación final: ${puntuacion} puntos · Tiempo: ${formatearTiempo(tiempoActual())}.` ;$("final").style.display="block";$("reiniciar").style.display="none";$("final").scrollIntoView({behavior:"smooth",block:"center"})}}else if(seleccion.length>1){$("mensaje").textContent="No coincide con una palabra pendiente. ¡Intenta otra vez!"}limpiar();inicio=null;seleccion=[];}
   tablero.addEventListener("pointerup",terminar);tablero.addEventListener("pointercancel",terminar);
-  $("guardarNombre").addEventListener("click",()=>{
-    const nombre=$("nombreParticipante").value.trim().replace(/\s+/g," ");
-    if(!nombre){$("estadoParticipante").textContent="Escribe tu nombre antes de continuar.";return;}
-    participante=nombre.slice(0,30);$("estadoParticipante").textContent="¡Listo, "+participante+"! Ya puedes jugar.";
-    $("registroParticipante").style.borderColor="#3f876a";
-  });
+  $("guardarNombre").addEventListener("click",()=>{const nombre=$("nombreParticipante").value.trim().replace(/\s+/g," ");if(!nombre){$("estadoParticipante").textContent="Escribe tu nombre antes de continuar.";return;}participante=nombre.slice(0,30);$("estadoParticipante").textContent=authReady?"¡Listo, "+participante+"! Ya puedes jugar.":"Tu nombre está listo, pero estamos conectando con Firebase. Espera unos segundos antes de terminar el juego.";$("registroParticipante").style.borderColor="#3f876a";});
   async function guardarResultado(){
-    if(resultadoGuardado)return;resultadoGuardado=true;
+    if(resultadoGuardado)return;
+    resultadoGuardado=true;
     if(!participante){$("estadoParticipante").textContent="No se guardó el resultado porque falta tu nombre.";return;}
-    if(!db){$("estadoFirebase").textContent="Sin conexión a la base de datos; el resultado no se pudo compartir.";return;}
-    const resultado={nombre:participante,puntos:puntuacion,segundos:tiempoActual(),fecha:Date.now()};
-    try{await db.ref(rankingRefPath).push(resultado);$("estadoFirebase").textContent="¡Resultado guardado! El ranking está actualizado.";}
-    catch(e){$("estadoFirebase").textContent="No se pudo guardar el resultado. Revisa las reglas de Firebase.";resultadoGuardado=false;}
+    if(!db||!authReady||!uid){$("estadoFirebase").textContent="La autenticación aún no está lista; el resultado no se pudo compartir.";resultadoGuardado=false;return;}
+    const ref=db.ref(rankingRefPath+"/"+uid);
+    const resultado={nombre:participante,puntos:puntuacion,segundos:tiempoActual(),fecha:Date.now(),uid:uid};
+    try{
+      const snap=await ref.once("value"),anterior=snap.val();
+      const mejor=!anterior||(Number(resultado.puntos)>Number(anterior.puntos))||(Number(resultado.puntos)===Number(anterior.puntos)&&Number(resultado.segundos)<Number(anterior.segundos));
+      if(mejor){await ref.set(resultado);$("estadoFirebase").textContent="¡Tu mejor resultado quedó guardado en el ranking!";}
+      else{$("estadoFirebase").textContent="Tu resultado no superó tu mejor puntuación guardada.";}
+    }catch(e){$("estadoFirebase").textContent="No se pudo guardar el resultado: "+e.message+". Comprueba las reglas de Firebase.";resultadoGuardado=false;}
   }
-  function dibujarRanking(datos){
-    const cuerpo=$("rankingCuerpo");cuerpo.innerHTML="";
-    const filas=datos?Object.values(datos).filter(x=>x&&typeof x.nombre==="string").sort((a,b)=>(Number(b.puntos)||0)-(Number(a.puntos)||0)||(Number(a.segundos)||0)-(Number(b.segundos)||0)):[];
-    $("estadoFirebase").textContent=db?"Ranking conectado · "+filas.length+" resultado(s)":"Conexión pendiente";
-    if(!filas.length){const tr=document.createElement("tr");tr.innerHTML='<td colspan="4">Todavía no hay resultados. ¡Sé el primero en completar el juego!</td>';cuerpo.appendChild(tr);return;}
-    filas.slice(0,50).forEach((f,i)=>{const tr=document.createElement("tr");const vals=[i===0?"🥇 1":i===1?"🥈 2":i===2?"🥉 3":String(i+1),f.nombre,String(Number(f.puntos)||0),formatearTiempo(Number(f.segundos)||0)];vals.forEach(v=>{const td=document.createElement("td");td.textContent=v;tr.appendChild(td)});cuerpo.appendChild(tr)});
-  }
-  $("reiniciar").addEventListener("click",generar);$("jugarOtraVez").addEventListener("click",generar);
-  function prepararQR(){const url=window.location.href;$("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data="+encodeURIComponent(url);}
-  $("compartirBoton").addEventListener("click",async()=>{const aviso=$("copiado");try{await navigator.clipboard.writeText(window.location.href);aviso.textContent="¡Enlace copiado! Ya puedes enviarlo por WhatsApp."}catch(e){aviso.textContent="Copia este enlace desde la barra del navegador: "+window.location.href}});
-  prepararQR();generar();
+  function dibujarRanking(datos){const cuerpo=$("rankingCuerpo");cuerpo.innerHTML="";const porNombre=new Map();Object.values(datos||{}).forEach(x=>{if(!x||typeof x.nombre!=="string")return;const k=x.nombre.trim().toLocaleLowerCase(),prev=porNombre.get(k);if(!prev||Number(x.puntos)>Number(prev.puntos)||(Number(x.puntos)===Number(prev.puntos)&&Number(x.segundos)<Number(prev.segundos)))porNombre.set(k,x)});const filas=[...porNombre.values()].sort((a,b)=>(Number(b.puntos)||0)-(Number(a.puntos)||0)||(Number(a.segundos)||0)-(Number(b.segundos)||0));$("estadoFirebase").textContent=db?"Ranking conectado · "+filas.length+" participante(s)":"Conexión pendiente";if(!filas.length){const tr=document.createElement("tr");tr.innerHTML='<td colspan="4">Todavía no hay resultados. ¡Sé el primero en completar el juego!</td>';cuerpo.appendChild(tr);return;}filas.slice(0,50).forEach((f,i)=>{const tr=document.createElement("tr"),vals=[i===0?"🥇 1":i===1?"🥈 2":i===2?"🥉 3":String(i+1),f.nombre,String(Number(f.puntos)||0),formatearTiempo(Number(f.segundos)||0)];vals.forEach(v=>{const td=document.createElement("td");td.textContent=v;tr.appendChild(td)});cuerpo.appendChild(tr)});}
+  $("reiniciar").addEventListener("click",generar);$("jugarOtraVez").addEventListener("click",generar);function prepararQR(){const url=window.location.href;$("qr").src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data="+encodeURIComponent(url)}
+  $("compartirBoton").addEventListener("click",async()=>{const aviso=$("copiado");try{await navigator.clipboard.writeText(window.location.href);aviso.textContent="¡Enlace copiado! Ya puedes enviarlo por WhatsApp."}catch(e){aviso.textContent="Copia este enlace desde la barra del navegador: "+window.location.href}});prepararQR();generar();
 })();
 </script>
 </body>
